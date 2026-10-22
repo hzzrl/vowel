@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <title>vowel</title>
+</head>
+<body>
+  <output id="output"></output>
+
+  <script>
+    const alphabet = "bcdfghjklmnpqrstvwxyz";
+    let result = "";
+
+    for (let i = 0; i < 5; i = i + 1) {
+      const index = Math.floor(Math.random() * alphabet.length);
+      result = result + alphabet[index];
+    }
+
+    document.getElementById("output").textContent = result;
+  </script>
+</body>
+</html>
